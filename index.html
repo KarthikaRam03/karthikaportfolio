@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ea6ec7f9ff.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> 
+                <img src="./images/logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi,I'm <span>Karthika</span><br>From Chennai</h1>
+            </div>
+        </div>
+
+    </div>
+   <!-- -------------------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/Karthikaa.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Software Engineering Graduate with a passion for Innovation and Problem Solving.To have a growth oriented and challenging career,where i can contribute my knowledge and skils to the Organisation and enhance my experience through continuous learinng and Teamwork.Also,With excellent communication skills and a collaborative mindset, I thrive in dynamic environments. Eager to leverage my skills to contribute meaningfully to innovative projects, I'm excited about the opportunity to embark on a journey in the tech industry and make a positive impact. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/Ux</span><br>Designing Web/App interface</li>
+                            <li><span>Web Development</span><br>Building Responsive sites </li>
+                            <li><span>App Development</span><br>Building Applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Java FullStack Development</span><br>Done a certification course in Java FullStack Development in Besant Technologies</li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>B.E.Computer Science from Dr.SACOE-Tiruchendur</li>
+                            <li><span>2018</span><br>Subbiah Vidyalayam girls higher Secondary School-Tuticorin</li>
+                            <li><span>2016</span><br>Subbiah Vidyalayam girls higher Secondary School-Tuticorin</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- -----------------Services---------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>FrontEnd Developer</h2>
+                    <p>Equipped with a solid understanding of HTML, CSS, and JavaScript, I have hands-on experience building responsive and interactive websites. I'm well-versed in modern frontend frameworks and libraries like React.js, constantly exploring emerging technologies to stay ahead of industry trends. My projects often prioritize user experience and accessibility, ensuring seamless navigation across various devices and browsers.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>java Developer</h2>
+                    <p>During my academic journey, I've delved into various projects and coursework, gaining hands-on experience in Java development. From creating efficient algorithms to building robust applications, I've honed my skills in Java programming, object-oriented design, and debugging techniques. Additionally, I've had exposure to frameworks like Spring and Hibernate, further expanding my knowledge of enterprise Java development</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>FullStack Developer</h2>
+                    <p>What excites me most about Fullstack development is the opportunity to bridge the gap between frontend and backend, creating cohesive applications that deliver value to users. I thrive in collaborative environments where I can leverage my technical skills to tackle complex challenges alongside like-minded peers.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Portfolio------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work1.png">
+                    <div class="layer">
+                        <h3>Restaurant site</h3>
+                        <p>Responsive Food and Restaurant website designed from HTML,CSS and JavaScript.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work2.png">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>An evolving collection of your work that reflects your talents, skills, experiences, and professional accomplishments.which designed from HTML,CSS and JavaScript.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work3.png">
+                    <div class="layer">
+                        <h3>Gender and Age Detection</h3>
+                        <p>An image Processing project from which the age and gender of an individual is identified from trained data sets.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+             <a href="#" class="btn">See More</a>
+        </div> 
+    </div>
+    <!-------------contact---------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>karthikarpk2000@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>9786399541</p>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <a href="https://www.instagram.com/peace_minded03/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/karthika-p-b64656221/"><i class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="./images/Karthika P-Java Fullstack Developer (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class ="btn btn2">Submit</button> 
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Karthika Made with<i class="fa-solid fa-heart"></i>Software Developer</div></div></p>
+        </div>
+    </div>
+<script>
+
+var tablinks=document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+
+
+}
+</script>
+<script>
+    var sidemenu =document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxQd4ID1MEdgBZDv0larqVOebRCQ45cuLP8ZvYg21MdHm51U4kFMQi0XhL3K8bTJxj4/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
